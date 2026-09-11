@@ -1,8 +1,8 @@
 # Hooman Design Tokens
 
-Three-layer design token set, authored in Token Studio and version-controlled as a single tokens.json.
+Three-layer design token set, authored in Token Studio and version-controlled as a single `tokens.json`.
 
-Hooman is an experiment in setting up design tokens to link with a real design system in Figma. The premise being that a single source of truth is the one that stops ambiguity and diverging design decisions between Designers and Developers.
+Hooman is an experiment in linking design tokens to a real design system in Figma. The premise: a single source of truth is what stops ambiguity and diverging decisions between designers and developers.
 
 ## The layering
 
@@ -12,7 +12,7 @@ Three layers, each referencing only the one beneath it.
 
 **Semantic** — `surface.page`, `surface.info`. Primitives given a job.
 
-**Component** — `button`, `card`, `header`, `footer`, `navigation`, `icons`,`tags`. What a specific thing uses.
+**Component** — `button`, `card`, `header`, `footer`, `navigation`, `icons`, `tags`. What a specific thing uses.
 
 ## Composition and aliasing
 
@@ -21,8 +21,8 @@ Values are referenced, never repeated. `button.primary.bg` resolves to `{base-co
 ## Format
 
 Token Studio JSON: `value` / `type` pairs with `$extensions` for modifiers.
-Used in Figma to poulate the design system build.
+Used in Figma to populate the design system build.
 
 ## Future Plans
 
-The semantic layer is thin relative to the component layer — two named surfaces against seven component groups — so components reach past semantics to primitives more often than they should. The fix is to widen the semantic layerfirst, so components have something meaningful to bind to.
+The semantic layer is thin relative to the component layer with two named surfaces against seven component groups, meaning components reach past semantics to primitives more often than they should. The fix is to widen the semantic layer first, so components have something meaningful to bind to.
